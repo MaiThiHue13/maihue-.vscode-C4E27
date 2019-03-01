@@ -1,8 +1,7 @@
-a=float((input("Nhap can nang:  "))
-b=float(input("Nhap chieu cao: "))
+a= float(input("nhap can nang: "))
+b= float(input("nhap chieu cao: "))
 
-
-chisoBMI= a/(b*b)
+chisoBMI= a/(b*b*0.0001)
 print(chisoBMI)
 
 if chisoBMI <= 16:
@@ -13,7 +12,7 @@ elif 18.5 <= chisoBMI <25:
     print("ban la nguoi binh thuong")
 elif  25<= chisoBMI < 30:
     print("ban bi thua can")
-else chisoBMI >= 30:
+else:
     print("ban bi beo phi")
 
 
