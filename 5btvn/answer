@@ -1,0 +1,24 @@
+- Why should we use functions at all?
+>>> chúng ta sử dụng hàm để giảm sự lặp đi lặp lại các đoạn code
+
+- How to define/declare a function?
+def <tên hàm> ()
+
+- How to call/use a function?
+<tên của hàm>()
+
+- What is return, why and how do we use it?
+Hàm sử dụng "return" để trả về giá trị chúng ta cần sử dụng lại cho bước tiếp theo
+
+-Do we have to use return in every function?
+Không, chúng ta chỉ sử dụng khi cần sử dụng lại giá trị trong hàm
+
+-What are function arguments/parameters, why and how we use it?
+tham số là các giá trị được nhập vào 1 cách tùy chọn, chúng ta sử dụng các đối số để gắn các  giá trị chúng ta có thể đặt vào hàm
+vd: tên của hàm (giá trị)
+
+- How to use function from a different file other than our currently working file?
+from file_contain_function import functions
+functions()
+
+
