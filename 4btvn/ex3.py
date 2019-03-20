@@ -6,10 +6,15 @@ for k, v in choice.items():
     print(k,v)
 
 n=int(input("mời nhập câu trả lời: "))
-
-if n==4:
-    print("Your choice: ",n)
-    print('Bingo')
+if choice[n] == 44:
+    print("bingo")
 else:
-    print("Your choice: ", n)
     print(":(")
+
+
+# if n==4:
+#     print("Your choice: ",n)
+#     print('Bingo')
+# else:
+#     print("Your choice: ", n)
+#     print(":(")
