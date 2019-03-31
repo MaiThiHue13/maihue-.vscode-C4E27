@@ -7,24 +7,24 @@ client = MongoClient (mongo_uri)
 pilot_hw = client.c4e
 customers = pilot_hw["customers"]
 
-events = []
+# events = []
 event_counts = 0
-ads = []
+# ads = []
 ads_counts = 0
-wom = []
+# wom = []
 wom_counts = 0
 all_customers = list(customers.find())
 for i in all_customers:
     # print(all_customers)
     if i["ref"] == "events":
-        events.append(i)
+        # events.append(i)
         event_counts += 1
 
     elif i["ref"] == "ads":
-        ads.append(i)
+        # ads.append(i)
         ads_counts += 1
     else:
-        wom.append(i)
+        # wom.append(i)
         wom_counts += 1
 print("events: ", event_counts)
 print("ads: ", ads_counts)

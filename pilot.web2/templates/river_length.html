@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a>{% for river in  all_river %}</a>
+    <div>
+        {% if river.continent == "America" %}
+            <b>{% if lengths.lengt < 1000 %}</b>
+                <b>Name: {{lengths.name}}</b>
+                <br>
+                <b>Continent: {{lengths.continent}}</b>
+                <br>
+                <b>Length: {{lengths.length}}</b>
+                <br>
+                <hr>
+                {% endif %}
+            {% endif %}
+    </div>
+{% endfor %}
+</body>
+</html>
