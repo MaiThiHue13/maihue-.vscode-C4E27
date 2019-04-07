@@ -8,10 +8,10 @@ app = Flask(__name__)
     # return render_template('index.html')
 
 @app.route('/all_river/<lengths>')
-def all_river(lengths):
+def all_river(lengths): 
     rivers =  river.find({"continent":"S. America"})
     return render_template("river_length.html",all_river = rivers)
-
+print(all_river)
 if __name__ == '__main__':
-  app.run( debug=True)
+  app.run( debug=True) 
  

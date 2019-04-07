@@ -9,13 +9,13 @@
 <body>
     <a>{% for river in  all_river %}</a>
     <div>
-        {% if river.continent == "America" %}
-            <b>{% if lengths.lengt < 1000 %}</b>
-                <b>Name: {{lengths.name}}</b>
+        {% if river.continent == "S. America" %}
+            <b>{% if river.length < 1000 %}</b>
+                <b>Name: {{river.name}}</b>
                 <br>
-                <b>Continent: {{lengths.continent}}</b>
+                <b>Continent: {{river.continent}}</b>
                 <br>
-                <b>Length: {{lengths.length}}</b>
+                <b>Length: {{river.length}}</b>
                 <br>
                 <hr>
                 {% endif %}
